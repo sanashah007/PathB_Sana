@@ -1,0 +1,25 @@
+name: genome_env
+channels:
+  - pytorch
+  - nvidia
+  - bioconda
+  - conda-forge
+  - defaults
+  - r
+dependencies:
+  - python=3.10
+  - biopython
+  - h5py
+  - requests
+  - mlst
+  - bakta==1.8.2=pyhdfd78af_1
+  - scikit-learn
+  - ruptures
+  - openpyxl
+  - pip
+  - pip:
+    - torch
+    - torchvision
+    - torchaudio
+    - --index-url https://download.pytorch.org/whl/cu121
+prefix: /home/torrillo/orcd/pool/miniconda3/envs/genome_env

@@ -1,0 +1,15 @@
+*.log
+*.out
+*.err
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/
+results/
+*.npy
+*.h5
+*.pt
+*.ckpt
+slurm-*.out
+all_embeded_genomes/
+twolayer.pth
