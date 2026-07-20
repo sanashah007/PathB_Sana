@@ -1,0 +1,55 @@
+Population Perturbation Experiment — Summary
+====================================================
+
+Genome split
+  Train (year < 2020): 51702  sampled: 51702  → cutoffs
+  Val   (year = 2020): 9706   sampled: 9706   → TP/FP/FN/TN
+  Test  (year > 2020): 28702  (never touched)
+
+Perturbation settings
+  Seeds:             [42, 123, 7]
+  Flip size:         20
+  Variations:        [1, 10, 100]
+  Mean flips/genome: 20.0
+
+DOR analysis
+  min_errors_per_gene (train): 5
+  min_val_errors:              1
+  Genes with cutoff computed:  5598
+  Genes with DOR reported:     5598
+  log10_dor  min:    0.011
+  log10_dor  median: 3.184
+  log10_dor  mean:   3.379
+  log10_dor  p90:    5.245
+  log10_dor  max:    7.355
+
+Top 20 genes by log10_dor
+  gene_name                                     category      log10_dor  sensitivity  specificity
+  -----------------------------------------------------------------------------------------------
+  GGOKJO_12595 hypothetical protein             other             7.355        0.996        1.000
+  PCLKBG_11395 putative sugar epimerase, cupin superfamily other             6.960        0.997        1.000
+  FEOBHI_07685 phosphocarrier protein HPr       other             6.646        0.997        1.000
+  FEOBHI_08660 two-component system response regulator VraR other             6.514        0.997        1.000
+  FEOBHI_01570 Hydroxymethylpyrimidine pyrophosphatase and other HAD family phosphatases other             6.510        0.997        1.000
+  FEOBHI_04610 (d)CMP kinase                    other             6.510        0.997        1.000
+  FEOBHI_05640 3-oxoacyl-[acyl-carrier-protein] reductase other             6.486        0.997        1.000
+  FEOBHI_06165 pantetheine-phosphate adenylyltransferase other             6.470        0.997        1.000
+  FEOBHI_10235 F0F1 ATP synthase subunit C      core              6.459        0.995        1.000
+  FEOBHI_07865 1,4-dihydroxy-2-naphthoyl-CoA synthase other             6.452        0.997        1.000
+  MDBBCG_05550 Exotoxin                         other             6.452        0.997        1.000
+  FEOBHI_03300 transcriptional regulator NrdR   other             6.396        0.996        1.000
+  OJEMIL_08290 Leukocidin S subunit lukE        other             6.391        0.996        1.000
+  FEOBHI_03680 putative phosphohydrolase YqeG, HAD superfamily other             6.389        0.997        1.000
+  FEOBHI_02100 2,3-diphosphoglycerate-dependent phosphoglycerate mutase other             6.352        0.994        1.000
+  JABGIB_12275 polymorphic toxin type 50 domain-containing protein other             6.348        0.994        1.000
+  GGOKJO_07925 FeoB-associated Cys-rich membrane protein other             6.319        0.986        1.000
+  FEOBHI_11105 acetyl-CoA carboxylase carboxyltransferase subunit alpha other             6.317        0.993        1.000
+  OJEMIL_08230 hypothetical protein             other             6.310        0.997        1.000
+  JNPAEA_12960 Pathogenicity island protein     other             6.305        0.996        1.000
+
+Category breakdown
+  core        : 272 genes, mean_log10_dor=4.420, mean_sensitivity=0.991, mean_specificity=0.919
+  iron_fes    : 39 genes, mean_log10_dor=3.993, mean_sensitivity=0.991, mean_specificity=0.905
+  other       : 4531 genes, mean_log10_dor=3.395, mean_sensitivity=0.990, mean_specificity=0.808
+  phage       : 517 genes, mean_log10_dor=2.580, mean_sensitivity=0.990, mean_specificity=0.593
+  resistance  : 239 genes, mean_log10_dor=3.531, mean_sensitivity=0.990, mean_specificity=0.838

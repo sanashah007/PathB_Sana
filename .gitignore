@@ -13,3 +13,6 @@ results/
 slurm-*.out
 all_embeded_genomes/
 twolayer.pth
+perturbed_inputs/
+perturbation_output/
+old_perturbation/perturbation_all_results.csv
