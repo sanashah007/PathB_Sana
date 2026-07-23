@@ -16,3 +16,14 @@ twolayer.pth
 perturbed_inputs/
 perturbation_output/
 old_perturbation/perturbation_all_results.csv
+
+# Metagenome pipeline — data and outputs
+metagenome_tests/ncbi_dataset/
+metagenome_tests/metagenome_vectors/
+metagenome_tests/bakta_db/
+
+# Per-run results and logs
+logs/
+population_perturbation/population_perturbation_results/
+four_strain_perturbation/four_strain_perturbation_output/
+four_strain_perturbation/predictions/
