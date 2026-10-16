@@ -1,0 +1,33 @@
+Specificity Cutoff Results — Comparison Summary
+====================================================
+k_sampled=51702  flip_size=20  seeds=[42, 123, 7]
+min_sensitivity=0.999  min_errors=50
+
+=== variation = 1 ===
+  Old 99th-pctile cutoff   : mean=6.302  median=6.232  n=5598
+  Completeness (new)        : mean=8.046  median=7.888  n=3622
+    sens med=1.0000  spec med=0.0456  step1=0  step3=3622  sens_met=3622/3622
+  Contamination (new)       : mean=9.303  median=9.714  n=3649
+    sens med=1.0000  spec med=0.0996  step1=39  step3=3610  sens_met=3649/3649
+
+=== variation = 10 ===
+  Old 99th-pctile cutoff   : mean=6.302  median=6.232  n=5598
+  Completeness (new)        : mean=5.585  median=5.475  n=3622
+    sens med=1.0000  spec med=0.1667  step1=0  step3=3621  sens_met=3622/3622
+  Contamination (new)       : mean=7.149  median=7.367  n=3649
+    sens med=1.0000  spec med=0.1151  step1=48  step3=3601  sens_met=3649/3649
+
+=== variation = 100 ===
+  Old 99th-pctile cutoff   : mean=6.302  median=6.232  n=5598
+  Completeness (new)        : mean=2.231  median=2.637  n=3622
+    sens med=1.0000  spec med=0.1353  step1=0  step3=3512  sens_met=3622/3622
+  Contamination (new)       : mean=4.568  median=4.818  n=3649
+    sens med=1.0000  spec med=0.1157  step1=55  step3=3592  sens_met=3649/3649
+
+--- Sensitivity distribution across all variations ---
+  v=1 comp: p50=1.0000  p90=1.0000  p99=1.0000  p100=1.0000
+  v=1 cont: p50=1.0000  p90=1.0000  p99=1.0000  p100=1.0000
+  v=10 comp: p50=1.0000  p90=1.0000  p99=1.0000  p100=1.0000
+  v=10 cont: p50=1.0000  p90=1.0000  p99=1.0000  p100=1.0000
+  v=100 comp: p50=1.0000  p90=1.0000  p99=1.0000  p100=1.0000
+  v=100 cont: p50=1.0000  p90=1.0000  p99=1.0000  p100=1.0000

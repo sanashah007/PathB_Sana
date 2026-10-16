@@ -1,0 +1,26 @@
+Youden cutoff analysis  (signed logit <= 2.3)
+=======================================================
+Train references: 51,702   MAGs: 143
+
+--- variation = 1 ---
+  Train ref (n=51,702)  median=6  mean=9.8
+  MAG     (n=143)   median=12  mean=20.6
+  Cohen's d: 0.799
+  Fraction MAG > ref median: 0.811
+
+--- variation = 10 ---
+  Train ref (n=51,702)  median=42  mean=49.0
+  MAG     (n=143)   median=78  mean=101.6
+  Cohen's d: 1.619
+  Fraction MAG > ref median: 0.958
+
+--- variation = 100 ---
+  Train ref (n=51,702)  median=141  mean=147.6
+  MAG     (n=143)   median=193  mean=281.0
+  Cohen's d: 1.983
+  Fraction MAG > ref median: 0.825
+
+Previous raw disagreement counts (logit*sign < 0, all 51702 refs):
+  v=1:   MAG median=0   Ref median=0
+  v=10:  MAG median=12  Ref median=6
+  v=100: MAG median=89  Ref median=45

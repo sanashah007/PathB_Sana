@@ -1,0 +1,181 @@
+baselines: v1=8.6300  v10=6.3258  v100=4.0070
+
+=== variation = 1 ===
+
+--- Completeness score ---
+  MAG (n=143)   mean=-6221.89  median=-6381.32
+  Ref (n=51,702) mean=-6801.73  median=-6866.76
+  MAG percentiles: p25=-6838.70  p50=-6381.32  p75=-5905.33  p90=-5508.27  p99=-2187.71
+  Ref percentiles: p25=-7236.63  p50=-6866.76  p75=-6427.76  p90=-6029.46  p99=-5052.54
+
+--- Contamination score ---
+  MAG (n=143)   mean=4981.74  median=5183.85
+  Ref (n=51,702) mean=5250.26  median=5200.15
+  MAG percentiles: p25=4933.12  p50=5183.85  p75=5460.90  p90=5638.04  p99=6029.88
+  Ref percentiles: p25=4962.18  p50=5200.15  p75=5530.35  p90=5826.35  p99=6149.93
+
+--- Top 20 genes driving completeness in MAGs (most positive mean contribution) ---
+  (positive = model expects gene present despite it being absent in assembly)
+  [     other  logDOR= 1.21]  MAG=+11.427  Ref=+7.742  delta=+3.685  DUF1129 domain-containing protein
+  [     other  logDOR= 0.80]  MAG=+11.381  Ref=+7.938  delta=+3.442  Nuclease SbcCD subunit C
+  [      core  logDOR= 1.31]  MAG=+10.831  Ref=+6.737  delta=+4.095  DNA polymerase III subunit alpha
+  [     other  logDOR= 2.22]  MAG=+10.723  Ref=+7.114  delta=+3.609  Nuclease SbcCD subunit D
+  [     other  logDOR= 1.87]  MAG=+10.567  Ref=+5.529  delta=+5.038  ABC transporter ATP-binding protein
+  [     other  logDOR=  nan]  MAG=+10.356  Ref=+6.722  delta=+3.634  competence type IV pilus minor pilin ComGD
+  [     other  logDOR= 2.39]  MAG=+10.068  Ref=+6.676  delta=+3.393  Antiseptic resistance protein SepA
+  [     other  logDOR= 1.63]  MAG=+10.010  Ref=+4.450  delta=+5.560  Exported protein
+  [     other  logDOR= 2.18]  MAG=+9.737  Ref=+6.780  delta=+2.956  DUF3899 domain-containing protein
+  [resistance  logDOR=  nan]  MAG=+9.157  Ref=+6.094  delta=+3.063  ABC-type dipeptide/oligopeptide/nickel transport system, per
+  [     other  logDOR=  nan]  MAG=+9.151  Ref=+7.520  delta=+1.631  DUF3267 domain-containing protein
+  [     other  logDOR= 1.71]  MAG=+9.135  Ref=+7.060  delta=+2.075  Membrane-associated serine protease, rhomboid family
+  [resistance  logDOR=  nan]  MAG=+9.047  Ref=+6.479  delta=+2.568  Permease
+  [     other  logDOR= 1.06]  MAG=+9.029  Ref=+6.827  delta=+2.201  Integral membrane protein YbhL, putative Ca2+ regulator, Bax
+  [     other  logDOR= 2.06]  MAG=+9.013  Ref=+7.179  delta=+1.833  Nitric oxide reductase activation protein
+  [resistance  logDOR= 2.36]  MAG=+8.941  Ref=+3.008  delta=+5.933  ABC-type dipeptide/oligopeptide/nickel transport system, per
+  [     other  logDOR=  nan]  MAG=+8.895  Ref=+6.272  delta=+2.623  sensor histidine kinase ArlS
+  [     other  logDOR= 2.08]  MAG=+8.841  Ref=+6.089  delta=+2.751  Membrane spanning protein
+  [      core  logDOR= 2.04]  MAG=+8.807  Ref=+7.368  delta=+1.439  DNA polymerase III subunit delta
+  [     other  logDOR=  nan]  MAG=+8.772  Ref=+5.525  delta=+3.247  cardiolipin synthase
+
+--- Top 20 genes driving contamination in MAGs (most negative mean contribution) ---
+  (negative = model doubts gene despite it being present in assembly)
+  [     other  logDOR= 3.01]  MAG=-8.650  Ref=-3.945  delta=-4.706  hypothetical protein
+  [     other  logDOR= 2.44]  MAG=-7.959  Ref=-5.621  delta=-2.338  Pathogenicity island family protein
+  [     other  logDOR=  nan]  MAG=-7.750  Ref=-1.869  delta=-5.881  DUF1672 domain-containing protein
+  [     other  logDOR= 3.52]  MAG=-7.222  Ref=-1.448  delta=-5.775  IS21-like element helper ATPase IstB
+  [     other  logDOR= 2.66]  MAG=-7.173  Ref=-3.631  delta=-3.542  Virulence-associated cell-wall-anchored protein SasG (LPXTG 
+  [     other  logDOR= 0.67]  MAG=-7.127  Ref=-5.431  delta=-1.696  staphyloferrin B export MFS transporter
+  [     other  logDOR= 1.60]  MAG=-7.068  Ref=-3.571  delta=-3.497  HTH cro/C1-type domain-containing protein
+  [     phage  logDOR= 1.83]  MAG=-6.872  Ref=-3.783  delta=-3.088  Putative phage regulatory protein
+  [     other  logDOR= 1.49]  MAG=-6.814  Ref=-2.439  delta=-4.374  Replication initiation protein
+  [     other  logDOR= 3.16]  MAG=-6.626  Ref=-2.408  delta=-4.219  KAP NTPase domain-containing protein
+  [     other  logDOR= 2.39]  MAG=-6.539  Ref=-1.983  delta=-4.556  Cassette chromosome recombinase B3
+  [     other  logDOR= 2.33]  MAG=-6.465  Ref=-6.572  delta=+0.108  LPXTG cell wall anchor domain-containing protein
+  [     phage  logDOR=  nan]  MAG=-6.409  Ref=-4.369  delta=-2.040  Phage protein
+  [     other  logDOR=  nan]  MAG=-6.395  Ref=-5.270  delta=-1.124  Ser-Asp rich fibrinogen-binding bone sialoprotein-binding pr
+  [     other  logDOR= 2.93]  MAG=-6.329  Ref=-5.685  delta=-0.644  GRAM-POS-ANCHORING domain-containing protein
+  [     other  logDOR= 1.68]  MAG=-6.299  Ref=-4.624  delta=-1.675  MSCRAMM family adhesin clumping factor ClfB
+  [     other  logDOR= 1.35]  MAG=-6.204  Ref=-1.736  delta=-4.468  AraC-type DNA-binding domain and AraC-containing proteins
+  [     other  logDOR=  nan]  MAG=-6.042  Ref=-2.163  delta=-3.879  Smooth muscle caldesmon
+  [     other  logDOR=  nan]  MAG=-6.040  Ref=-6.091  delta=+0.051  hypothetical protein
+  [     other  logDOR= 2.23]  MAG=-6.022  Ref=-4.277  delta=-1.745  ATP-binding protein
+
+=== variation = 10 ===
+
+--- Completeness score ---
+  MAG (n=143)   mean=-7633.08  median=-7576.17
+  Ref (n=51,702) mean=-7921.57  median=-7959.54
+  MAG percentiles: p25=-8143.35  p50=-7576.17  p75=-7045.92  p90=-6259.17  p99=-5688.82
+  Ref percentiles: p25=-8443.32  p50=-7959.54  p75=-7428.90  p90=-6927.23  p99=-5773.60
+
+--- Contamination score ---
+  MAG (n=143)   mean=6081.51  median=5964.57
+  Ref (n=51,702) mean=6046.53  median=5941.85
+  MAG percentiles: p25=5689.07  p50=5964.57  p75=6653.41  p90=7446.85  p99=8277.59
+  Ref percentiles: p25=5654.77  p50=5941.85  p75=6395.61  p90=6830.47  p99=7478.68
+
+--- Top 20 genes driving completeness in MAGs (most positive mean contribution) ---
+  (positive = model expects gene present despite it being absent in assembly)
+  [     other  logDOR= 5.63]  MAG=+12.968  Ref=+14.349  delta=-1.381  translation initiation factor IF-1
+  [      core  logDOR= 5.47]  MAG=+11.520  Ref=+17.837  delta=-6.318  50S ribosomal protein L36
+  [     other  logDOR= 1.21]  MAG=+11.426  Ref=+7.714  delta=+3.712  DUF1129 domain-containing protein
+  [     other  logDOR= 0.80]  MAG=+11.377  Ref=+7.924  delta=+3.453  Nuclease SbcCD subunit C
+  [      core  logDOR= 1.31]  MAG=+10.831  Ref=+6.729  delta=+4.103  DNA polymerase III subunit alpha
+  [     other  logDOR= 2.22]  MAG=+10.726  Ref=+7.106  delta=+3.620  Nuclease SbcCD subunit D
+  [     other  logDOR= 1.87]  MAG=+10.566  Ref=+5.524  delta=+5.041  ABC transporter ATP-binding protein
+  [     other  logDOR=  nan]  MAG=+10.356  Ref=+6.709  delta=+3.648  competence type IV pilus minor pilin ComGD
+  [     other  logDOR= 2.39]  MAG=+10.070  Ref=+6.667  delta=+3.404  Antiseptic resistance protein SepA
+  [     other  logDOR= 1.63]  MAG=+10.010  Ref=+4.461  delta=+5.549  Exported protein
+  [     other  logDOR= 2.18]  MAG=+9.738  Ref=+6.784  delta=+2.954  DUF3899 domain-containing protein
+  [resistance  logDOR=  nan]  MAG=+9.160  Ref=+6.103  delta=+3.057  ABC-type dipeptide/oligopeptide/nickel transport system, per
+  [     other  logDOR=  nan]  MAG=+9.151  Ref=+7.514  delta=+1.637  DUF3267 domain-containing protein
+  [     other  logDOR= 1.71]  MAG=+9.136  Ref=+7.046  delta=+2.089  Membrane-associated serine protease, rhomboid family
+  [resistance  logDOR=  nan]  MAG=+9.048  Ref=+6.478  delta=+2.571  Permease
+  [     other  logDOR= 1.06]  MAG=+9.030  Ref=+6.826  delta=+2.204  Integral membrane protein YbhL, putative Ca2+ regulator, Bax
+  [     other  logDOR= 2.06]  MAG=+9.013  Ref=+7.166  delta=+1.847  Nitric oxide reductase activation protein
+  [resistance  logDOR= 2.36]  MAG=+8.944  Ref=+3.018  delta=+5.926  ABC-type dipeptide/oligopeptide/nickel transport system, per
+  [     other  logDOR=  nan]  MAG=+8.901  Ref=+6.285  delta=+2.616  sensor histidine kinase ArlS
+  [     other  logDOR= 2.08]  MAG=+8.842  Ref=+6.088  delta=+2.754  Membrane spanning protein
+
+--- Top 20 genes driving contamination in MAGs (most negative mean contribution) ---
+  (negative = model doubts gene despite it being present in assembly)
+  [     other  logDOR= 3.01]  MAG=-8.614  Ref=-3.963  delta=-4.651  hypothetical protein
+  [     other  logDOR= 2.44]  MAG=-7.975  Ref=-5.639  delta=-2.336  Pathogenicity island family protein
+  [     other  logDOR=  nan]  MAG=-7.740  Ref=-1.863  delta=-5.877  DUF1672 domain-containing protein
+  [     other  logDOR= 3.52]  MAG=-7.232  Ref=-1.463  delta=-5.769  IS21-like element helper ATPase IstB
+  [     other  logDOR= 2.66]  MAG=-7.154  Ref=-3.625  delta=-3.528  Virulence-associated cell-wall-anchored protein SasG (LPXTG 
+  [     other  logDOR= 0.67]  MAG=-7.117  Ref=-5.438  delta=-1.679  staphyloferrin B export MFS transporter
+  [     other  logDOR= 1.60]  MAG=-7.015  Ref=-3.586  delta=-3.428  HTH cro/C1-type domain-containing protein
+  [     phage  logDOR= 1.83]  MAG=-6.868  Ref=-3.817  delta=-3.051  Putative phage regulatory protein
+  [     other  logDOR= 1.49]  MAG=-6.797  Ref=-2.449  delta=-4.348  Replication initiation protein
+  [     other  logDOR= 2.39]  MAG=-6.555  Ref=-1.989  delta=-4.566  Cassette chromosome recombinase B3
+  [     other  logDOR= 3.16]  MAG=-6.533  Ref=-2.424  delta=-4.110  KAP NTPase domain-containing protein
+  [     other  logDOR= 2.33]  MAG=-6.486  Ref=-6.599  delta=+0.113  LPXTG cell wall anchor domain-containing protein
+  [     phage  logDOR=  nan]  MAG=-6.428  Ref=-4.374  delta=-2.054  Phage protein
+  [     other  logDOR=  nan]  MAG=-6.423  Ref=-5.293  delta=-1.129  Ser-Asp rich fibrinogen-binding bone sialoprotein-binding pr
+  [     other  logDOR= 2.93]  MAG=-6.343  Ref=-5.707  delta=-0.636  GRAM-POS-ANCHORING domain-containing protein
+  [     other  logDOR= 1.68]  MAG=-6.316  Ref=-4.650  delta=-1.666  MSCRAMM family adhesin clumping factor ClfB
+  [     other  logDOR= 1.35]  MAG=-6.212  Ref=-1.750  delta=-4.461  AraC-type DNA-binding domain and AraC-containing proteins
+  [     other  logDOR=  nan]  MAG=-6.070  Ref=-6.109  delta=+0.039  hypothetical protein
+  [     other  logDOR= 2.23]  MAG=-6.054  Ref=-4.296  delta=-1.758  ATP-binding protein
+  [     other  logDOR=  nan]  MAG=-6.044  Ref=-2.173  delta=-3.871  Smooth muscle caldesmon
+
+=== variation = 100 ===
+
+--- Completeness score ---
+  MAG (n=143)   mean=-7657.97  median=-7675.27
+  Ref (n=51,702) mean=-8170.75  median=-8189.40
+  MAG percentiles: p25=-8168.92  p50=-7675.27  p75=-7235.01  p90=-6229.17  p99=-5658.15
+  Ref percentiles: p25=-8667.57  p50=-8189.40  p75=-7700.90  p90=-7243.33  p99=-5953.61
+
+--- Contamination score ---
+  MAG (n=143)   mean=6054.25  median=5946.45
+  Ref (n=51,702) mean=6121.89  median=6016.26
+  MAG percentiles: p25=5725.95  p50=5946.45  p75=6342.89  p90=7407.12  p99=8307.32
+  Ref percentiles: p25=5731.57  p50=6016.26  p75=6455.51  p90=6912.70  p99=7421.91
+
+--- Top 20 genes driving completeness in MAGs (most positive mean contribution) ---
+  (positive = model expects gene present despite it being absent in assembly)
+  [      core  logDOR= 5.47]  MAG=+15.519  Ref=+15.519  delta=+0.000  50S ribosomal protein L36
+  [      core  logDOR=  nan]  MAG=+15.519  Ref=+15.519  delta=+0.000  30S ribosomal protein S6
+  [     other  logDOR= 4.92]  MAG=+15.395  Ref=+15.408  delta=-0.012  3-methyl-2-oxobutanoate hydroxymethyltransferase
+  [     other  logDOR= 5.63]  MAG=+15.126  Ref=+15.519  delta=-0.393  translation initiation factor IF-1
+  [     other  logDOR= 3.90]  MAG=+14.381  Ref=+12.958  delta=+1.423  DUF1806 domain-containing protein
+  [      core  logDOR= 5.28]  MAG=+14.065  Ref=+15.519  delta=-1.454  50S ribosomal protein L13
+  [     other  logDOR=  nan]  MAG=+13.481  Ref=+15.519  delta=-2.038  putative DNA-binding transcriptional regulator YerC, contain
+  [      core  logDOR= 4.84]  MAG=+13.337  Ref=+10.478  delta=+2.859  PolC-type DNA polymerase III
+  [      core  logDOR= 4.26]  MAG=+13.141  Ref=+11.851  delta=+1.289  DNA segregation ATPase FtsK/SpoIIIE or related protein
+  [      core  logDOR= 4.92]  MAG=+12.253  Ref=+15.519  delta=-3.266  50S ribosomal protein L29
+  [     other  logDOR= 4.78]  MAG=+12.037  Ref=+15.077  delta=-3.040  elongation factor Tu
+  [     other  logDOR= 5.40]  MAG=+11.983  Ref=+15.519  delta=-3.536  adenylate kinase
+  [      core  logDOR= 5.60]  MAG=+11.807  Ref=+15.488  delta=-3.680  30S ribosomal protein S13
+  [     other  logDOR=  nan]  MAG=+11.702  Ref=+15.519  delta=-3.816  Transcriptional regulator CtsR
+  [     other  logDOR= 6.35]  MAG=+11.660  Ref=+15.519  delta=-3.859  2,3-diphosphoglycerate-dependent phosphoglycerate mutase
+  [      core  logDOR= 6.04]  MAG=+11.350  Ref=+15.519  delta=-4.168  30S ribosomal protein S17
+  [     other  logDOR= 1.21]  MAG=+11.220  Ref=+6.455  delta=+4.765  DUF1129 domain-containing protein
+  [     other  logDOR= 0.80]  MAG=+10.976  Ref=+6.572  delta=+4.403  Nuclease SbcCD subunit C
+  [      core  logDOR= 1.31]  MAG=+10.654  Ref=+5.999  delta=+4.655  DNA polymerase III subunit alpha
+  [     other  logDOR= 2.22]  MAG=+10.608  Ref=+6.254  delta=+4.354  Nuclease SbcCD subunit D
+
+--- Top 20 genes driving contamination in MAGs (most negative mean contribution) ---
+  (negative = model doubts gene despite it being present in assembly)
+  [     other  logDOR= 2.44]  MAG=-7.657  Ref=-5.304  delta=-2.353  Pathogenicity island family protein
+  [     other  logDOR= 3.52]  MAG=-7.061  Ref=-1.538  delta=-5.524  IS21-like element helper ATPase IstB
+  [     other  logDOR= 1.44]  MAG=-7.009  Ref=-3.220  delta=-3.790  DUF2951 domain-containing protein
+  [     other  logDOR= 0.67]  MAG=-6.781  Ref=-5.250  delta=-1.531  staphyloferrin B export MFS transporter
+  [     phage  logDOR= 1.83]  MAG=-6.739  Ref=-4.385  delta=-2.355  Putative phage regulatory protein
+  [     other  logDOR= 2.33]  MAG=-6.476  Ref=-6.222  delta=-0.254  LPXTG cell wall anchor domain-containing protein
+  [     phage  logDOR= 1.62]  MAG=-6.453  Ref=-3.981  delta=-2.472  Phi PV83 orf 10-like protein
+  [     other  logDOR=  nan]  MAG=-6.449  Ref=-1.608  delta=-4.841  DUF1672 domain-containing protein
+  [     other  logDOR= 5.66]  MAG=-6.419  Ref=-7.829  delta=+1.410  Cerebellar degeneration-related antigen 1
+  [     phage  logDOR=  nan]  MAG=-6.318  Ref=-4.217  delta=-2.101  Phage protein
+  [     other  logDOR= 1.60]  MAG=-6.231  Ref=-3.815  delta=-2.416  HTH cro/C1-type domain-containing protein
+  [     other  logDOR= 1.68]  MAG=-6.224  Ref=-4.537  delta=-1.687  MSCRAMM family adhesin clumping factor ClfB
+  [     other  logDOR= 1.88]  MAG=-6.221  Ref=-4.302  delta=-1.919  Replication initiation protein
+  [     other  logDOR= 1.35]  MAG=-6.182  Ref=-1.824  delta=-4.358  AraC-type DNA-binding domain and AraC-containing proteins
+  [     other  logDOR=  nan]  MAG=-6.164  Ref=-4.547  delta=-1.617  membrane protein
+  [     other  logDOR= 2.93]  MAG=-6.096  Ref=-5.827  delta=-0.269  GRAM-POS-ANCHORING domain-containing protein
+  [     other  logDOR= 3.53]  MAG=-6.091  Ref=-5.168  delta=-0.923  hypothetical protein
+  [     other  logDOR= 2.13]  MAG=-6.080  Ref=-3.008  delta=-3.072  hypothetical protein
+  [     other  logDOR=  nan]  MAG=-6.017  Ref=-5.161  delta=-0.857  Ser-Asp rich fibrinogen-binding bone sialoprotein-binding pr
+  [     other  logDOR=  nan]  MAG=-6.016  Ref=-3.375  delta=-2.642  2-isopropylmalate synthase

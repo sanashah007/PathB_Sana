@@ -21,6 +21,11 @@ old_perturbation/perturbation_all_results.csv
 metagenome_tests/ncbi_dataset/
 metagenome_tests/metagenome_vectors/
 metagenome_tests/bakta_db/
+metagenome_tests/pathb_predictions/
+metagenome_tests/metagenome_perturbation_results/
+metagenome_tests/metagenome_natural_outliers/
+metagenome_tests/reference_baseline_cache/
+metagenome_tests/disagreement_distribution_results/
 
 # Per-run results and logs
 logs/

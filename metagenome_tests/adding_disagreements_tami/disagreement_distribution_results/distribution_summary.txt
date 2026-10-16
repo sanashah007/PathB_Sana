@@ -1,0 +1,13 @@
+Raw disagreements (logit × sign < 0)
+
+--- variation = 1 ---
+  MAG (n=143)  median=0  mean=4.0  rate=0.0007
+  Ref (n=51,702)  median=0  mean=1.2  rate=0.0002
+
+--- variation = 10 ---
+  MAG (n=143)  median=12  mean=20.7  rate=0.0037
+  Ref (n=51,702)  median=6  mean=9.8  rate=0.0018
+
+--- variation = 100 ---
+  MAG (n=143)  median=89  mean=107.7  rate=0.0192
+  Ref (n=51,702)  median=45  mean=51.7  rate=0.0092

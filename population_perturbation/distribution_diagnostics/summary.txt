@@ -1,0 +1,128 @@
+Score Distribution Diagnostics
+====================================================
+k=5000  flip_size=20  seeds=[42, 123, 7]  variation=100
+
+--- Completeness (present→absent) ---
+  Genes analysed: 4958
+  Cohen's d distribution: p25=0.978  p50=2.642  p75=6.524  p90=10.496  p99=19.867
+  Genes with d > 1 (clearly separable): 3691
+  Genes with d < 0.2 (no separation):   402
+  Mean overlap_fraction: 0.9004  (p50=1.0000  p90=1.0000)
+  Mean achievable specificity @ 100% sensitivity: 0.6264  (p50=0.8288  p90=0.9994)
+  Mean achievable sensitivity @ 100% specificity: 0.0948  (p50=0.0000  p90=0.3390)
+
+  Top 20 genes by Cohen's d (most separable):
+  gene_name                                     category          d  true_mean false_mean  overlap
+  FEOBHI_10240 F0F1 ATP synthase subunit A      core         2830.934    -11.512     -0.819   0.0000
+  FEOBHI_07310 phosphate acetyltransferase      other        2803.088    -11.512     -1.216   0.0000
+  FEOBHI_04170 site-specific tyrosine recombina other        2711.800    -11.512     -1.220   0.0000
+  FEOBHI_05720 methionyl-tRNA formyltransferase core         1487.170    -11.512     -1.142   0.0000
+  FEOBHI_04070 TPP-dependent pyruvate or acetoi other        56.964    -11.512     -1.589   0.0000
+  FEOBHI_05430 30S ribosomal protein S15        core         31.395    -11.493     -2.204   0.0000
+  GFNPHG_10075 Uncharacterized lipoprotein MW03 other        28.904      1.642      8.049   0.0000
+  GGOKJO_11700 O-succinylbenzoate synthase      other        26.466      0.113      7.532   0.0000
+  GFNPHG_12135 superantigen-like protein SSL7   other        26.101      1.895      7.706   0.0000
+  ELEGCC_03295 Tat-translocated enzyme          other        25.713      0.725      7.804   0.0000
+  PCLKBG_10985 DUF1049 domain-containing protei other        25.153      0.652      7.635   0.0000
+  ELEGCC_10465 RNase III domain-containing prot other        24.598      0.856      7.751   1.0000
+  APLEGB_08520 K(+)-transporting ATPase subunit other        24.375      0.726      7.857   0.0000
+  GFNPHG_10375 DUF4888 domain-containing protei other        24.283      2.345      7.711   0.0000
+  ELEGCC_09555 ABC transporter ATP-binding prot other        24.027      0.843      7.768   0.0000
+  DKPFHJ_12485 hypothetical protein             other        23.917     -0.119      7.657   1.0000
+  OJEMIL_01750 YueH family protein              other        23.901      2.228      7.735   0.0000
+  ELEGCC_06940 Extracellular protein            other        23.507     -0.032      7.339   1.0000
+  PCLKBG_05880 Thioredoxin domain-containing pr other        23.384      0.564      7.633   0.0000
+  ELEGCC_10685 TfoX N-terminal domain protein   resistance   23.158     -0.307      7.657   0.1429
+
+  Bottom 20 genes by Cohen's d (least separable, n≥10):
+  gene_name                                     category          d true_n false_n  overlap
+  FEOBHI_02125 ABC-type polar amino acid transp other        -2.394     73     15   1.0000
+  FEOBHI_03375 hydroxymethylbilane synthase     other        -2.380     72     15   1.0000
+  FEOBHI_07455 tRNA adenosine(34) deaminase Tad core         -2.327     58     15   1.0000
+  FEOBHI_10105 UDP-N-acetylmuramyl pentapeptide core         -2.280     65     15   1.0000
+  FEOBHI_06315 pyruvate dehydrogenase (acetyl-t other        -2.160     51     21   1.0000
+  FEOBHI_04615 30S ribosomal protein S1         core         -2.160     51     21   1.0000
+  FEOBHI_05390 ACT domain protein               other        -2.145     56     15   1.0000
+  FEOBHI_05885 UDP-N-acetylmuramoyl-L-alanine-- core         -1.983     46     15   1.0000
+  FEOBHI_10700 DUF2951 domain-containing protei other        -1.970     53     15   1.0000
+  FEOBHI_03265 DNA-binding response regulator,  other        -1.970     52     15   1.0000
+  FEOBHI_06370 preprotein translocase subunit S other        -1.789     54     21   1.0000
+  FEOBHI_03090 30S ribosomal protein S9         core         -1.752     54     15   1.0000
+  FEOBHI_10580 anaerobic ribonucleoside-triphos other        -1.750     55     15   1.0000
+  FEOBHI_03350 trigger factor                   other        -1.683     61     26   1.0000
+  FEOBHI_03245 Alkaline shock protein 23        other        -1.646     52     18   1.0000
+  FEOBHI_08805 nicotinate phosphoribosyltransfe other        -1.643     53     18   1.0000
+  FEOBHI_08325 Na+/H+ antiporter Mnh1 subunit A other        -1.582     55     29   1.0000
+  FEOBHI_07165 arginine--tRNA ligase            core         -1.491     54     18   1.0000
+  FEOBHI_02215 respiratory nitrate reductase su other        -1.488     55     18   1.0000
+  FEOBHI_04720 asparagine--tRNA ligase          core         -1.488     55     18   1.0000
+
+  Category breakdown (median Cohen's d):
+    other         : n= 4002  median d=2.934
+    phage         : n=  438  median d=2.804
+    iron_fes      : n=   36  median d=2.543
+    resistance    : n=  226  median d=1.256
+    core          : n=  256  median d=1.093
+
+--- Contamination (absent→present) ---
+  Genes analysed: 4087
+  Cohen's d distribution: p25=1.927  p50=4.366  p75=6.933  p90=10.337  p99=23.387
+  Genes with d > 1 (clearly separable): 3643
+  Genes with d < 0.2 (no separation):   189
+  Mean overlap_fraction: 0.5873  (p50=0.8113  p90=1.0000)
+  Mean achievable specificity @ 100% sensitivity: 0.6827  (p50=0.8963  p90=1.0000)
+  Mean achievable sensitivity @ 100% specificity: 0.4112  (p50=0.1852  p90=1.0000)
+
+  Top 20 genes by Cohen's d (most separable):
+  gene_name                                     category          d  true_mean false_mean  overlap
+  GFNPHG_08830 LPXTG cell wall anchor domain-co other        54.937    -11.513    -10.592   0.0000
+  ELEGCC_10465 RNase III domain-containing prot other        42.140     -1.523      5.581   0.0000
+  ELEGCC_03295 Tat-translocated enzyme          other        41.615     -1.469      5.688   0.0000
+  ELEGCC_09555 ABC transporter ATP-binding prot other        40.709     -1.566      5.760   0.0000
+  ELEGCC_11555 Secreted protein                 other        39.897     -1.343      5.790   0.0000
+  ELEGCC_03500 TIGR01741 family protein         other        36.229     -1.645      6.366   0.0000
+  ELEGCC_05600 Staphylococcal complement inhibi other        33.262     -1.436      6.591   0.0000
+  MDBBCG_05420 superantigen-like protein SSL1   other        29.977     -1.581      6.168   0.0000
+  JICCIG_08180 Transporter                      other        29.442     -1.705      5.999   0.0000
+  PCLKBG_07060 DUF1963 domain-containing protei other        29.365     -1.480      5.694   0.0000
+  MDBBCG_03335 DUF1433 domain-containing protei other        29.120     -1.521      5.866   0.0000
+  ELEGCC_12405 MFS transporter                  other        28.658     -1.569      6.532   0.0000
+  ELEGCC_02890 FKLRK protein                    other        28.347     -1.617      6.199   0.0000
+  JNPAEA_07575 XRE family transcriptional regul other        28.270    -11.508     -3.335   0.0000
+  GLIPDI_05655 DUF1433 domain-containing protei other        27.410     -1.680      5.261   0.0000
+  JICCIG_05410 Putative haloacid dehydrogenase- other        27.104     -1.609      6.186   0.0000
+  GFNPHG_08925 Putative exported protein        other        27.084     -1.620      4.069   0.0000
+  PCLKBG_11395 putative sugar epimerase, cupin  other        26.869     -1.503      5.946   0.0000
+  MDBBCG_02870 SAR1012 family small protein     other        26.762     -1.229      6.692   0.0000
+  PPBCFI_03170 UPF0302 protein SAOUHSC_01479    other        26.559     -1.513      5.762   0.0000
+
+  Bottom 20 genes by Cohen's d (least separable, n≥10):
+  gene_name                                     category          d true_n false_n  overlap
+  POLKMP_04815 RNA-binding domain protein YlmH  other        -0.830     66    660   1.0000
+  JICCIG_01245 staphyloferrin B export MFS tran other        -0.596     51    811   1.0000
+  GFNPHG_10115 type I restriction-modification  resistance   -0.564     60    480   1.0000
+  IOPEJI_09695 Phage head-tail adapter protein  phage        -0.515     52    547   1.0000
+  IOPEJI_09690 Phage protein                    phage        -0.472     61    610   0.9508
+  IPGIMP_07965 Putative GMP reductase           other        -0.438     54     93   0.9815
+  LFCCLA_12285 SdrH family protein              other        -0.426     55    263   0.9818
+  HFCIMO_11465 Replication initiation protein   other        -0.392     64    274   1.0000
+  POLKMP_04820 RNA-binding protein YlmH, contai other        -0.380     47    666   1.0000
+  IPGIMP_06870 YjiH family protein              other        -0.324     68     51   0.9265
+  POLKMP_00210 bi-component leukocidin LukED su other        -0.302     44    692   1.0000
+  AHEHON_10720 DGQHR domain                     other        -0.266     62    234   1.0000
+  GLIPDI_11250 DUF87 domain-containing protein  other        -0.257     64    282   1.0000
+  GLIPDI_11220 Transposon-related protein       other        -0.229     56    282   1.0000
+  PODMID_06080 LPXTG cell wall anchor domain-co other        -0.222     48    408   1.0000
+  GLIPDI_07700 Epimerase family protein MW0731  other        -0.206     42   3329   1.0000
+  GLIPDI_11230 membrane protein                 other        -0.200     44    282   1.0000
+  GLIPDI_11260 TcpD family membrane protein     other        -0.193     66    279   1.0000
+  GLIPDI_11280 DUF961 domain-containing protein other        -0.183     46    283   1.0000
+  CIFEJN_05830 Uncharacterized lipoprotein SAUS other        -0.153     52     54   0.9808
+
+  Category breakdown (median Cohen's d):
+    iron_fes      : n=   22  median d=7.220
+    other         : n= 3342  median d=4.804
+    resistance    : n=  140  median d=4.689
+    core          : n=   70  median d=2.843
+    phage         : n=  513  median d=2.146
+
